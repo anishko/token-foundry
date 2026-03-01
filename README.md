@@ -1,4 +1,8 @@
 # Token Foundry
+## Screenshot
+
+<img width="681" height="819" alt="image" src="https://github.com/user-attachments/assets/633596d1-952f-4133-a0fd-914555949c72" />
+
 
 Token Foundry is a sandbox simulation for designing, refining, and testing digital assets.
 
