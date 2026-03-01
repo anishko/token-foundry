@@ -12,8 +12,9 @@ Built using the Godot Engine and GDScript.
 
 Play the browser version here:
 
-https://anishko.itch.io/token
+https://anishko.itch.io/godotmintengine
 
+**If you are met with an error within itch.io please run the source code on the latest version of GoDot engine Web)- : https://editor.godotengine.org/releases/latest/ **
 ---
 
 ## Features
