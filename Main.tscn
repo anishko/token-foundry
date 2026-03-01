@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="Script" uid="uid://dt2ofan62emnk" path="res://main.gd" id="1_fos0i"]
+[ext_resource type="Script" uid="uid://pwynqs8nfyqt" path="res://forge_panel.gd" id="2_3dxm6"]
+[ext_resource type="Script" uid="uid://gj2a0yg0ybdg" path="res://refine_panel.gd" id="3_lgr22"]
+[ext_resource type="Script" uid="uid://w3bqkqcjs12p" path="res://backtest_panel.gd" id="4_trn2v"]
+[ext_resource type="Script" uid="uid://bq5daqrly2sik" path="res://chart_box.gd" id="5_03owx"]
+
+[node name="Main" type="Control" unique_id=812982897]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fos0i")
+
+[node name="RootFill" type="Control" parent="." unique_id=1737185759]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBox" type="VBoxContainer" parent="RootFill" unique_id=533602158]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 651.0
+
+[node name="TopNav" type="HBoxContainer" parent="RootFill/VBox" unique_id=598941112]
+layout_mode = 2
+
+[node name="Forge" type="Button" parent="RootFill/VBox/TopNav" unique_id=191232035]
+layout_mode = 2
+
+[node name="Refine" type="Button" parent="RootFill/VBox/TopNav" unique_id=645690726]
+layout_mode = 2
+
+[node name="Backtest" type="Button" parent="RootFill/VBox/TopNav" unique_id=2102672597]
+layout_mode = 2
+
+[node name="Body" type="PanelContainer" parent="RootFill/VBox" unique_id=844043306]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ForgePanel" type="Control" parent="RootFill/VBox/Body" unique_id=2089496349]
+layout_mode = 2
+script = ExtResource("2_3dxm6")
+
+[node name="ForgeBox" type="VBoxContainer" parent="RootFill/VBox/Body/ForgePanel" unique_id=1129161047]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameEdit" type="LineEdit" parent="RootFill/VBox/Body/ForgePanel/ForgeBox" unique_id=1787765891]
+layout_mode = 2
+
+[node name="KindPick" type="OptionButton" parent="RootFill/VBox/Body/ForgePanel/ForgeBox" unique_id=792273718]
+layout_mode = 2
+
+[node name="SupplySpin" type="SpinBox" parent="RootFill/VBox/Body/ForgePanel/ForgeBox" unique_id=1789376396]
+layout_mode = 2
+
+[node name="BaseValueSpin" type="SpinBox" parent="RootFill/VBox/Body/ForgePanel/ForgeBox" unique_id=1992710830]
+layout_mode = 2
+
+[node name="BtnMint" type="Button" parent="RootFill/VBox/Body/ForgePanel/ForgeBox" unique_id=1745032180]
+layout_mode = 2
+
+[node name="MintStatus" type="Label" parent="RootFill/VBox/Body/ForgePanel/ForgeBox" unique_id=2033628029]
+layout_mode = 2
+
+[node name="RefinePanel" type="Control" parent="RootFill/VBox/Body" unique_id=120770606]
+layout_mode = 2
+script = ExtResource("3_lgr22")
+
+[node name="RefineBox" type="VBoxContainer" parent="RootFill/VBox/Body/RefinePanel" unique_id=919005914]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StatsLabel" type="Label" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=1996410941]
+layout_mode = 2
+
+[node name="BtnAudit" type="Button" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=137804930]
+layout_mode = 2
+
+[node name="BtnLiquidity" type="Button" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=1368375652]
+layout_mode = 2
+
+[node name="BtnBurn" type="Button" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=525237291]
+layout_mode = 2
+
+[node name="BtnMarketing" type="Button" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=1274138289]
+layout_mode = 2
+
+[node name="BtnStability" type="Button" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=1503796084]
+layout_mode = 2
+
+[node name="RefineStatus" type="Label" parent="RootFill/VBox/Body/RefinePanel/RefineBox" unique_id=902266982]
+layout_mode = 2
+
+[node name="BacktestPanel" type="Control" parent="RootFill/VBox/Body" unique_id=2052863139]
+layout_mode = 2
+script = ExtResource("4_trn2v")
+
+[node name="BacktestBox" type="VBoxContainer" parent="RootFill/VBox/Body/BacktestPanel" unique_id=435645445]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Row" type="HBoxContainer" parent="RootFill/VBox/Body/BacktestPanel/BacktestBox" unique_id=924168641]
+layout_mode = 2
+
+[node name="DaysSpin" type="SpinBox" parent="RootFill/VBox/Body/BacktestPanel/BacktestBox/Row" unique_id=827016017]
+layout_mode = 2
+
+[node name="BtnRun" type="Button" parent="RootFill/VBox/Body/BacktestPanel/BacktestBox/Row" unique_id=102853855]
+layout_mode = 2
+
+[node name="ChartBox" type="Control" parent="RootFill/VBox/Body/BacktestPanel/BacktestBox" unique_id=1124302059]
+custom_minimum_size = Vector2(0, 260)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("5_03owx")
+
+[node name="BacktestStatus" type="Label" parent="RootFill/VBox/Body/BacktestPanel/BacktestBox" unique_id=1745268168]
+layout_mode = 2
