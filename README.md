@@ -1,14 +1,14 @@
 # Token Foundry
-## Screenshot
-
-<img width="681" height="819" alt="image" src="https://github.com/user-attachments/assets/633596d1-952f-4133-a0fd-914555949c72" />
-
 
 Token Foundry is a sandbox simulation for designing, refining, and testing digital assets.
 
 The tool lets users create a custom asset, adjust its economic parameters, apply upgrades, and simulate how the asset performs over time using a simple backtesting model.
 
 Built using the Godot Engine and GDScript.
+
+<img width="1281" height="314" alt="image" src="https://github.com/user-attachments/assets/d16b0152-96e5-46bf-8f71-830552bcc68c" />
+<img width="1278" height="530" alt="image" src="https://github.com/user-attachments/assets/6c570c06-9719-4e32-84d4-8a415a7a8c58" />
+<img width="1277" height="408" alt="image" src="https://github.com/user-attachments/assets/f8d3b046-6660-4d83-97a8-96b11c3ccdd3" />
 
 ---
 
